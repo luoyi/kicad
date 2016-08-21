@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name footprint)(type KiCad)(uri /home/luoyi/github/kicad/footprint.pretty)(options "")(descr ""))
+  (lib (name w_conn_misc)(type KiCad)(uri /home/luoyi/github/kicad/footprint.pretty/w_conn_misc.pretty)(options "")(descr ""))
+)
