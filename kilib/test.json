@@ -1,0 +1,5 @@
+{
+	"name" : "MC34637",
+	"ref" : "M",
+    "pins" : [["VIN", "W"], ["PPR", "O"], ["CHG", "O"], ["EN", "I"], ["GND", "W"], ["FAST", "O"], ["ISET", "O"], ["BAT", "O"]]
+}
