@@ -1,5 +1,14 @@
+[
 {
-	"name" : "MC34637",
+	"package" : "DIP",
+	"name" : "MC34647",
 	"ref" : "M",
     "pins" : [["VIN", "W"], ["PPR", "O"], ["CHG", "O"], ["EN", "I"], ["GND", "W"], ["FAST", "O"], ["ISET", "O"], ["BAT", "O"]]
+},
+{
+	"package" : "DIP",
+	"name" : "MC34638",
+	"ref" : "U",
+    "pins" : [["VIN", "W"], ["PPR", "O"], ["CHG", "O"], ["EN", "I"], ["GND", "W"], ["FAST", "O"], ["ISET", "O"], ["BAT", "O"]]
 }
+]
