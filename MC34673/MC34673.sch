@@ -95,7 +95,7 @@ U 1 1 57B8317E
 P 4900 3700
 F 0 "R1" V 4980 3700 50  0000 C CNN
 F 1 "470" V 4900 3700 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4830 3700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4830 3700 50  0001 C CNN
 F 3 "" H 4900 3700 50  0000 C CNN
 	1    4900 3700
 	0    1    1    0   
@@ -117,7 +117,7 @@ U 1 1 57B834D1
 P 7000 3700
 F 0 "R3" V 7080 3700 50  0000 C CNN
 F 1 "5.23K" V 7000 3700 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6930 3700 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6930 3700 50  0001 C CNN
 F 3 "" H 7000 3700 50  0000 C CNN
 	1    7000 3700
 	0    1    1    0   
@@ -128,7 +128,7 @@ U 1 1 57B835DC
 P 7400 4000
 F 0 "C2" H 7425 4100 50  0000 L CNN
 F 1 "2.2uF" H 7425 3900 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 7438 3850 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 7438 3850 50  0001 C CNN
 F 3 "" H 7400 4000 50  0000 C CNN
 	1    7400 4000
 	1    0    0    -1  
@@ -150,16 +150,13 @@ U 1 1 57B83961
 P 5850 4250
 F 0 "C1" H 5875 4350 50  0000 L CNN
 F 1 "1uF" H 5875 4150 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2.5" H 5888 4100 50  0001 C CNN
+F 2 "Capacitors_SMD:C_0805_HandSoldering" H 5888 4100 50  0001 C CNN
 F 3 "" H 5850 4250 50  0000 C CNN
 	1    5850 4250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3750 3600 5150 3600
-Wire Wire Line
 	4250 3300 4250 3800
-Connection ~ 4250 3600
 Wire Wire Line
 	4250 3700 4450 3700
 Connection ~ 4250 3700
@@ -171,8 +168,6 @@ Wire Wire Line
 	4250 4650 4250 3900
 Wire Wire Line
 	4250 3900 5150 3900
-Wire Wire Line
-	3150 4600 8400 4600
 Wire Wire Line
 	6650 4600 6650 3900
 Connection ~ 4250 4600
@@ -203,13 +198,6 @@ Wire Wire Line
 Wire Wire Line
 	6000 4250 6650 4250
 Connection ~ 6650 4250
-Connection ~ 5150 3600
-Wire Wire Line
-	3750 3550 3750 3100
-Wire Wire Line
-	3750 3100 3150 3100
-Wire Wire Line
-	3150 3100 3150 4600
 Wire Wire Line
 	5050 3800 5150 3800
 Wire Wire Line
@@ -222,7 +210,7 @@ U 1 1 57B83100
 P 4900 3800
 F 0 "R2" V 4980 3800 50  0000 C CNN
 F 1 "470" V 4900 3800 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 4830 3800 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 4830 3800 50  0001 C CNN
 F 3 "" H 4900 3800 50  0000 C CNN
 	1    4900 3800
 	0    1    1    0   
@@ -255,7 +243,7 @@ U 1 1 57B95199
 P 6100 3250
 F 0 "R4" V 6180 3250 50  0000 C CNN
 F 1 "470" V 6100 3250 50  0000 C CNN
-F 2 "Resistors_ThroughHole:Resistor_Horizontal_RM10mm" V 6030 3250 50  0001 C CNN
+F 2 "Resistors_SMD:R_0805_HandSoldering" V 6030 3250 50  0001 C CNN
 F 3 "" H 6100 3250 50  0000 C CNN
 	1    6100 3250
 	0    1    1    0   
@@ -263,10 +251,59 @@ $EndComp
 Wire Wire Line
 	5800 3250 5950 3250
 Wire Wire Line
-	6250 3250 6650 3250
-Wire Wire Line
-	6650 3250 6650 3800
+	6250 3250 7250 3250
 Connection ~ 6650 3800
 Wire Wire Line
 	5150 3250 5600 3250
+Wire Wire Line
+	3750 3550 5150 3550
+Wire Wire Line
+	4250 3550 4250 3600
+Connection ~ 4250 3550
+Wire Wire Line
+	3750 3650 3750 4600
+Wire Wire Line
+	3000 4600 8600 4600
+Connection ~ 8400 4600
+Wire Wire Line
+	5150 3550 5150 3600
+Connection ~ 5150 3550
+Connection ~ 5150 3600
+Wire Wire Line
+	8600 4600 8600 3500
+Wire Wire Line
+	7250 3250 7250 3800
+Wire Wire Line
+	7250 3800 6650 3800
+Wire Wire Line
+	8600 3500 6650 3500
+$Comp
+L USB_OTG P2
+U 1 1 57CD6B10
+P 4100 2100
+F 0 "P2" H 4425 1975 50  0000 C CNN
+F 1 "USB_OTG" H 4100 2300 50  0000 C CNN
+F 2 "Connect:USB_Micro-B" V 4050 2000 50  0001 C CNN
+F 3 "" V 4050 2000 50  0000 C CNN
+	1    4100 2100
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4400 2000
+NoConn ~ 4400 2100
+NoConn ~ 4400 2200
+Wire Wire Line
+	4400 1900 4400 1350
+Wire Wire Line
+	4400 1350 3000 1350
+Wire Wire Line
+	3000 1350 3000 4600
+Connection ~ 3750 4600
+Wire Wire Line
+	4400 2300 4600 2300
+Wire Wire Line
+	4600 2300 4600 3550
+Connection ~ 4600 3550
+Wire Wire Line
+	4000 1700 4400 1700
+Connection ~ 4400 1700
 $EndSCHEMATC
